@@ -1,0 +1,61 @@
+@font-face {
+    font-family: transformers;
+    src: url(Transformers.ttf);
+
+    font-family: littleDays;
+    src: url(Littledays.ttf);
+}
+
+body {
+  background-color: #0e1c33;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+}
+
+#content {
+  width:100%;
+  height:800px;
+  background-color: #6195e8;
+  margin: 0 auto;
+  position: relative;
+}
+
+#title {
+  text-align: center;
+  color: black;
+  font-size: 8vw;
+  font-family: littleDays;
+  padding-top: 20px;
+}
+
+ul {
+    position: absolute;
+    width:100%;
+    bottom:0;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+  display: inline;
+}
+
+.button {
+  font-family: littleDays;
+  text-decoration: none;
+  font-size: 5vw;
+  color: #222222;
+  height: 100px;
+  line-height: 100px;
+  white-space: nowrap;
+  padding: 4px 4px 0px 5vw;
+}
