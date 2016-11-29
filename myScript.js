@@ -2,19 +2,21 @@ jq = jQuery.noConflict();
 
 jq(function($){
 
+$('#content').load(target + '.html');
+
 $('a').on('click mouseenter', function(){
     $(this).css("color", "red");
 });
 
 $('a').on('mouseleave', function(){
-    $(this).css("color", "#222222");
+    $(this).css("color", "white");
 });
 
 $('ul li a').on('click', function(){
   var $this =  $(this),
   target = $this.data('target'); console.log("target: " + target);
 
-  $('#content').load(target + '.php');
+  $('#content').load(target + '.html');
   return false;
 });
 
