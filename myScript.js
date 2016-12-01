@@ -2,7 +2,7 @@ jq = jQuery.noConflict();
 
 jq(function($){
 
-$('#content').load(target + '.html');
+ $('#content').load('home.html');
 
 $('a').on('click mouseenter', function(){
     $(this).css("color", "red");
@@ -18,6 +18,12 @@ $('ul li a').on('click', function(){
 
   $('#content').load(target + '.html');
   return false;
+
+  if (target == "about"){
+   $("wrapper").css("height", "1400px");
+   $("content").css("height", "1200px")
+  }
 });
+
 
 });
