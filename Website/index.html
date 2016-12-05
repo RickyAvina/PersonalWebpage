@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page</title>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <div id='title'>
+    <span>
+      PURE CSS
+    </span>
+    <br>
+    <span>
+      PARALLAX PIXEL STARS
+    </span>
+
+    <!-- start -->
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+      <button onclick="myFunction()" class="dropbtn">Dropdown 2</button>
+      <div id="myDropdown2" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <!-- start -->
+
+    <ul>
+      <li><a href="#" data-target="home" class="button">Home Page</a></li>
+      <li><a href="#" data-target="about" class="button">About Page</a></li>
+    </ul>
+  </div>
+  <div id = "wrapper">
+    <div id="navIndicator1"></div>
+    <div id="navIndicator2"></div>
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="myScript.js"></script>
+    <script src="typeahead.js/bloodhound.min.js"></script>
+    <script src="typeahead.js/typeahead.query.min.js"></script>
+  </body>
+  </html>
